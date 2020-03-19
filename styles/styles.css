@@ -244,6 +244,9 @@ body {
   font-size: 1.8rem;
   position: relative;
   color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#332b64), to(#5B4083));
+  background-image: linear-gradient(to bottom, #332b64, #5B4083);
+  background-color: #5B4083;
 }
 
 /* STRIPPING STYLES */
@@ -288,18 +291,20 @@ button {
   margin: 0 auto;
 }
 
-/* HEADER */
-header {
-  background-color: #5B4083;
-  height: 100vh;
-  overflow: hidden;
-  background-image: url(../assets/wave2.svg), -webkit-gradient(linear, left top, left bottom, from(#332b64), to(#5B4083));
-  background-image: url(../assets/wave2.svg), linear-gradient(to bottom, #332b64, #5B4083);
-  background-size: cover;
-  background-position: right;
+.section-header {
+  text-transform: uppercase;
 }
 
-header .flexParent {
+/* HEADER */
+header {
+  height: 100vh;
+  background-image: url(../assets/wave2.svg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+
+header .flex-parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,16 +316,64 @@ header .flexParent {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+  padding: 40px 0;
 }
 
-.title {
+header .title {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-align: end;
 }
 
-.nav {
+header .nav {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  width: 50%;
+}
+
+header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav li {
+  margin: 0 10px;
+}
+
+header .nav-link {
+  padding: 10px;
+  border-bottom: 2px solid white;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+}
+
+header .nav-link:hover, header .nav-link:focus {
+  border-color: transparent;
 }
 
 /* END OF HEADER */
+.about .flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0;
+}
+
+.about-copy {
+  width: 50%;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  border-radius: 50%;
+}
+
+.skills .icon {
+  width: 1.8rem;
+  color: white;
+}

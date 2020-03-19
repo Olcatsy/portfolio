@@ -1,0 +1,25 @@
+.about {
+
+  .flex-parent {
+    display: flex;
+    padding: 40px 0;
+  }
+
+  &-copy {
+    width: 50%;
+  }
+
+
+  &-img {
+    // clip-path: ellipse(40% 40% at 50% 50%);
+    width: 50%;
+    
+    img {
+      border-radius: 50%;
+
+    }
+  }
+
+
+
+}

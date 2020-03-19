@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-size: 1.8rem;
+    position: relative;
+    color: white;
+    // font-family: ;
+    background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
+    background-color: #5B4083;
+}
+
+
+/* STRIPPING STYLES */
+body, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* COMMON */
+.wrapper {
+  max-width: 2000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-header {
+    text-transform: uppercase;
+}
+

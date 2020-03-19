@@ -1,0 +1,49 @@
+/* HEADER */
+header {
+  height: 100vh;
+  background-image: url(../assets/wave2.svg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+
+  .flex-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 40px 0;
+  }
+
+  .title {
+    align-self: flex-end;
+    text-align: end;
+  }
+
+  .nav {
+    align-self: flex-start;
+    width: 50%;
+
+    & ul {
+      display: flex;
+    }
+
+    & li {
+      margin: 0 10px;
+    }
+    
+    &-link {
+      padding: 10px;
+      border-bottom: 2px solid white;
+      transition: $transition;
+      text-transform: uppercase;
+
+      @include hover-state {
+        border-color: transparent;
+      }
+    }
+  }
+
+
+    
+}
+/* END OF HEADER */

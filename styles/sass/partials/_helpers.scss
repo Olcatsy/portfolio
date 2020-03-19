@@ -1,0 +1,30 @@
+// FONTS
+
+// COLORS
+
+
+// MISC
+$transition: all 0.3s ease-out;
+
+// MIXINS
+
+// flexbox
+@mixin flex($flex-direction: initial, $justify-content: initial, $align-items: initial) { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+
+// hover state
+@mixin hover-state {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+
+
