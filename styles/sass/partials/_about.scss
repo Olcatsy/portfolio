@@ -1,25 +1,55 @@
 .about {
 
   .flex-parent {
-    display: flex;
-    padding: 40px 0;
+    @include flex(column-reverse, center, center);
   }
 
   &-copy {
-    width: 50%;
+    width: 100%;
+    @include flex(column, center, center);
   }
 
 
   &-img {
-    // clip-path: ellipse(40% 40% at 50% 50%);
-    width: 50%;
+    width: 90%;
     
     img {
       border-radius: 50%;
-
     }
   }
 
+  .download {
+    @include button(darkorange);
+  }
+}
 
+
+
+// ****MEDIA QUERIES****
+@media (min-width: $small-tablet){
+}
+
+
+@media (min-width: $large-tablet) {
+  .about {
+    
+    .flex-parent {
+      flex-direction: row;
+    }
+    
+    &-img {
+      max-width: 40%;
+    }
+    
+    &-copy {
+      max-width: 60%;
+    }
+    
+  }
+
+}
+
+
+@media (min-width: $laptop) {
 
 }

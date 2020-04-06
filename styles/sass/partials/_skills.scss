@@ -1,9 +1,47 @@
 .skills {
 
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: $spacing-m;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
 
+  li {
+    display: grid;
+    justify-items: center;
+    grid-gap: $spacing-s;
+
+  }
 
   .icon {
-    width: 1.8rem;
-    color: white;
+    font-size: 4.5rem;
+    width: 4.5rem;
+    display: inline-block;
   }
+
+  p {
+    font-size: 2.3rem;
+  }
+}
+
+
+
+
+// ****MEDIA QUERIES****
+@media (min-width: $small-tablet) {
+
+}
+
+
+@media (min-width: $large-tablet) {
+
+}
+
+
+@media (min-width: $laptop) {
+
 }

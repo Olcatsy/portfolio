@@ -1,30 +1,67 @@
 // FONTS
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Rajdhani:500,600|Rubik:400,500|Teko&display=swap');
+
+$anonymous: "Anonymous Pro", sans-serif;
+$rajdhani: "Rajdhani", sans-serif;
+$rubik: "Rubik", sans-serif;
+$teko: "Teko", sans-serif;
 
 // COLORS
+
+
+// BREAKPOINTS (mobile first)
+$small-tablet: 480px + 1px;
+$large-tablet: 768px + 1px;
+$laptop: 980px + 1px;
+
+// SPACING
+$spacing-s: 10px;
+$spacing-m: 30px;
+$spacing-l: 50px;
+$spacing-xl: 100px;
+
 
 
 // MISC
 $transition: all 0.3s ease-out;
 
+
+
+
+
+
+
+
 // MIXINS
 
 // flexbox
 @mixin flex($flex-direction: initial, $justify-content: initial, $align-items: initial) { 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: $flex-direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
 
 // hover state
 @mixin hover-state {
-    &:hover,
-    &:focus {
-        @content;
-    }
+  &:hover,
+  &:focus {
+      @content;
+  }
 }
+
+//button 
+@mixin button($color) {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: $color;
+  color: white; 
+  text-transform: uppercase;
+}
+
+
 
 
 

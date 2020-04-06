@@ -1,14 +1,20 @@
 html {
-    font-size: 62.5%; /* 10px */
+  font-size: 62.5%; /* 10px */
 }
 
 body {
-    font-size: 1.8rem;
-    position: relative;
-    color: white;
-    // font-family: ;
-    background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
-    background-color: #5B4083;
+  font-size: 1.8rem;
+  position: relative;
+  color: white;
+  font-family: $anonymous;
+  background-color: #5B4083;
+  background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
+}
+
+h1, h2, h3 {
+  font-family: $rajdhani;
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 
@@ -22,40 +28,70 @@ h5,
 h6,
 ul,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 button {
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
 
 /* COMMON */
+section {
+  margin: $spacing-xl 0;
+}
+
 .wrapper {
-  max-width: 2000px;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px
 }
 
 .section-header {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.copy {
+  margin: $spacing-m 0;
+}
+// End of GENERAL
+
+
+
+// ****MEDIA QUERIES****
+@media (min-width: $small-tablet) {
+  
+  
+}
+
+
+@media (min-width: $large-tablet) {
+  .wrapper {
+    max-width: 2000px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+@media (min-width: $laptop) {
+
 }
 

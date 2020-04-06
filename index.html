@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Olga Filiushkina</title>
+  <title>Olga Filiushkina | Home</title>
   <script src='https://kit.fontawesome.com/cb6fbd44a4.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -17,8 +20,8 @@
 
       <!-- Title -->
       <div class="title">
-        <h1 class="title">Hi, I'm Olga Filiushkina</h1>
-        <h2 class="subtitle">A Front-End Web Developer from Toronto, Canada</h2>
+        <h1 class="title">Olga Filiushkina</h1>
+        <h2 class="subtitle">A Front-End Web Developer</h2>
       </div>
 
       <!-- Header nav -->
@@ -45,7 +48,11 @@
 
         <div class="about-copy">
           <h2 class="section-header">Who is Olga?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fuga at possimus incidunt, nam, in aspernatur voluptatem vero doloribus quisquam, mollitia quasi nulla accusantium a eos perferendis quos iure? Voluptatem aut itaque nulla suscipit culpa aliquid, iure at atque nam?</p>
+          <p class="copy">I’m a front-end web developer from Toronto, ON. I channel my interests in visual communication and computer technology
+          to find creative solutions and bring my ideas to life on the web. Coming from a science background I have strong
+          technical communication skills, and I pride myself in writing clean modular code. I aim to build socially responsible
+          apps that put user experience and accessibility to the forefront.</p>
+          <button id="download" class="download">Download Resume</button>
         </div>
 
         <div class="about-img">
@@ -66,27 +73,27 @@
 
         <ul class="skills-grid">
           <li>
-            <i class="fab fa-html5 icon icon" aria-hidden></i>
+            <i class="devicon-html5-plain icon" aria-hidden></i>
             <p>HTML</p>
           </li>
           <li>
-            <i class="fab fa-css3-alt icon" aria-hidden></i>
+            <i class="devicon-css3-plain icon" aria-hidden></i></i>
             <p>CSS</p>
           </li>
           <li>
-            <i class="fab fa-sass icon" aria-hidden></i>
+            <i class="devicon-sass-original icon" aria-hidden></i>
             <p>SCSS</p>
           </li>
           <li>
-            <i class="fab fa-js icon" aria-hidden></i>
+            <i class="devicon-javascript-plain icon" aria-hidden></i>
             <p>JavaScript</p>
           </li>
           <li>
-            <img src="assets/jquery.svg" alt="" class="icon">
+            <i class="devicon-jquery-plain icon" aria-hidden></i>
             <p>jQuery</p>
           </li>
           <li>
-            <i class="fab fa-react icon" aria-hidden></i>
+            <i class="devicon-react-original icon" aria-hidden></i>
             <p>React</p>
           </li>
           <li>
@@ -103,7 +110,7 @@
           </li>
           <li>
             <i class="fas fa-universal-access icon"></i>
-            <p>Accessibility</p>
+            <p>WCAG</p>
           </li>
         </ul>
 
@@ -117,8 +124,156 @@
     <section id="projects" class="projects">
       <div class="wrapper">
 
+        <h2 class="section-header">My Projects</h2>
+  
+        <ul class="projects-container">
+  
+  
+          <!-- Sophie -->
+          <li class="project sophie">
+  
+            <h3 class="project-title">It's all about Sophie</h3>
+  
+            <div class="project-img">
+              <img src="assets/sophie.png" alt="It's all about Sophie">
+            </div>
 
+            <div class="project-copy">
+
+              <div class="project-skills">
+                <p>HTML | SCSS</p>
+              </div>
+    
+              <p class="copy">A multipage fully-responsive PSD conversion site that has semantic markup and follows
+                accessibility guidelines.</p>
+    
+              <div class="project-buttons">
+                <a class="project-button" href="#">View Live</a>
+                <a class="project-button" href="#">View repo</a>
+              </div>
+            </div>
+          </li>
+          <!-- End of Sophie -->
+  
+  
+          <!-- Flashback -->
+          <li class="project flashback">
+  
+            <h3 class="project-title">Flashback</h3>
+  
+            <div class="project-img">
+              <img src="assets/flashback.png" alt="Flashback">
+            </div>
+
+            <div class="project-copy">
+
+              <div class="project-skills">
+                <p>HTML | SCSS | jQuery</p>
+              </div>
+    
+              <p class="copy">A card-matching memory game with a synthwave vibe!</p>
+    
+              <div class="project-buttons">
+                <a class="project-button" href="#">View Live</a>
+                <a class="project-button" href="#">View repo</a>
+              </div>
+            </div>
+  
+          </li>
+          <!-- End of Flashback -->
+  
+  
+          <!-- CGG -->
+          <li class="project color-grid">
+  
+            <h3 class="project-title">Color Grid Generator</h3>
+  
+            <div class="project-img">
+              <img src="assets/cgg.png" alt="Color Grid Generator">
+            </div>
+  
+            <div class="project-copy">
+
+              <div class="project-skills">
+                <p>HTML | SCSS | CSS Grid | jQuery | Unsplash API</p>
+              </div>
+    
+              <p class="copy">A grid gallery generator, created with images retrieved from Unsplash API based on user's choice of color.
+                The gallery
+                grid is adjustable, and the user can grab its HTML and CSS. This app was built together with Kay
+                Evans-Stocks.</p>
+    
+              <div class="project-buttons">
+                <a class="project-button" href="#">View Live</a>
+                <a class="project-button" href="#">View repo</a>
+              </div>
+            </div>
+
+          </li>
+          <!-- End of CGG -->
+  
+  
+          <!-- Analog -->
+          <li class="project analog">
+  
+            <h3 class="project-title">Analog</h3>
+  
+            <div class="project-img">
+              <img src="assets/analog.png" alt="Analog">
+            </div>
+  
+            <div class="project-copy">
+
+              <div class="project-skills">
+                <p>React | Firebase | HTML Canvas</p>
+              </div>
+    
+              <p class="copy">A creative exercise in a form of a digital drawing app. The user gets an abstract concept prompt and is
+                asked to sketch
+                it without drawing any recognizable objects or symbols.They can also post their drawings into a public
+                gallery to share
+                their visual interpretations with other users. The drawing pad is built using HTML canvas, and the gallery
+                is stored in Firebase.</p>
+    
+              <div class="project-buttons">
+                <a class="project-button" href="#">View Live</a>
+                <a class="project-button" href="#">View repo</a>
+              </div>
+            </div>
+          </li>
+          <!-- End of Analog -->
+  
+  
+          <!-- Bite-sized Travel -->
+          <!-- <li class="project bite-sized">
+  
+              <h3 class="project-title">Bite-sized Travel</h3>
+    
+              <div class="project-img">
+                <img src="assets/bitesized.png" alt="Bite-sized Travel">
+              </div>
+
+              <div class="project-copy">
+
+                <div class="project-skills">
+                  <p>React | Firebase | Zomato API</p>
+                </div>
+      
+                <p class="copy">A travelling companion for foodies. Search for a city you are heading to, create a list of restaurants that
+                  interest you, and save it for later use. The restaurants are provided by Zomato API, and the trips are
+                  stored in Firebase. This app was built together with with Henri Adusei, Char Ponce and Hassan Elsayed.</p>
+      
+                <div class="project-buttons">
+                  <a class="project-button" href="#">View Live</a>
+                  <a class="project-button" href="#">View repo</a>
+                </div>
+              </div>
+            </div>
+  
+          </li> -->
+        </ul>
       </div>
+
     </section>
     <!-- End of PROJECTS -->
 
@@ -128,19 +283,53 @@
     <section id="contact" class="contact">
       <div class="wrapper">
 
+        <h2>Contact me</h2>
+
+        <!-- Social -->
+        <div class="contact-social">
+          <ul>
+            <li>
+              <!-- Twitter -->
+              <a href="https://twitter.com/OlgaFilCodes"><i class="fab fa-twitter" aria-label="Olga's Twitter"></i></a>
+            </li>
+            <li>
+              <!-- Codepen -->
+              <a href="https://codepen.io/OlgaFil"><i class="fab fa-codepen" aria-label="Olga's Codepen"></i></a>
+            </li>
+            <li>
+              <!-- GitHub -->
+              <a href="https://github.com/Olcatsy"><i class="fab fa-github" aria-label="Olga's GitHub"></i></a>
+            </li>
+            <li>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/olga-filiushkina-755b90167/"><i class="fab fa-linkedin-in"
+                  alt="Olga's LinkedIn"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!-- End of Social -->
+
+        <address>
+          <p class="email">Email: olga.filiushkina@gmail.com</p>
+        </address>
 
       </div>
     </section>
     <!-- End of CONTACT -->
-    
+
 
   </main>
   <!-- END OF MAIN -->
-  
+
 
 
   <!-- FOOTER -->
-  <footer></footer>
+  <footer>
+    <p>Designed and coded by Olga Filiushkina</p>
+    <p>Copyright © 2020 Olga Filiushkina</p>
+    <p>Assets by</p>
+  </footer>
   <!-- END OF FOOTER -->
 </body>
+
 </html>

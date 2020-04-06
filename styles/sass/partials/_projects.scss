@@ -1,0 +1,60 @@
+.projects {
+
+
+  
+  
+}
+
+.project {
+  display: grid;
+  grid-gap: $spacing-m;
+  grid-template-columns: 1fr;
+  margin: $spacing-l 0;
+
+  
+
+  &-img {
+    align-self: center;
+
+    img {
+      min-width: 320px;
+    }
+  }
+
+  &-button {
+    @include button(magenta)
+  }
+
+}
+// End of PROJECTS
+
+
+
+// ****MEDIA QUERIES****
+@media (min-width: $small-tablet) {
+
+}
+
+
+@media (min-width: $large-tablet) {
+  .project {
+    grid-template-columns: repeat(2, 1fr);
+
+    &-title {
+      grid-column: 1 / -1;
+    }
+
+    &-img {
+      grid-column: 1 / span 1;
+    }
+
+    &-copy {
+      grid-column: 2 / span 1;
+    }
+  }
+}
+
+
+@media (min-width: $laptop) {
+
+}

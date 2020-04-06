@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Rajdhani:500,600|Rubik:400,500|Teko&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -244,9 +245,16 @@ body {
   font-size: 1.8rem;
   position: relative;
   color: white;
+  font-family: "Anonymous Pro", sans-serif;
+  background-color: #5B4083;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#332b64), to(#5B4083));
   background-image: linear-gradient(to bottom, #332b64, #5B4083);
-  background-color: #5B4083;
+}
+
+h1, h2, h3 {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 /* STRIPPING STYLES */
@@ -285,17 +293,31 @@ button {
 }
 
 /* COMMON */
+section {
+  margin: 100px 0;
+}
+
 .wrapper {
-  max-width: 2000px;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .section-header {
   text-transform: uppercase;
 }
 
-/* HEADER */
+.copy {
+  margin: 30px 0;
+}
+
+@media (min-width: 769px) {
+  .wrapper {
+    max-width: 2000px;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 header {
   height: 100vh;
   background-image: url(../assets/wave2.svg);
@@ -316,7 +338,7 @@ header .flex-parent {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
-  padding: 40px 0;
+  padding: 50px;
 }
 
 header .title {
@@ -328,7 +350,6 @@ header .title {
 header .nav {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: 50%;
 }
 
 header .nav ul {
@@ -353,27 +374,148 @@ header .nav-link:hover, header .nav-link:focus {
   border-color: transparent;
 }
 
-/* END OF HEADER */
 .about .flex-parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-copy {
-  width: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about-img {
-  width: 50%;
+  width: 90%;
 }
 
 .about-img img {
   border-radius: 50%;
 }
 
-.skills .icon {
-  width: 1.8rem;
+.about .download {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: darkorange;
   color: white;
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .about .flex-parent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-img {
+    max-width: 40%;
+  }
+  .about-copy {
+    max-width: 60%;
+  }
+}
+
+.skills-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills li {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  grid-gap: 10px;
+}
+
+.skills .icon {
+  font-size: 4.5rem;
+  width: 4.5rem;
+  display: inline-block;
+}
+
+.skills p {
+  font-size: 2.3rem;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 50px 0;
+}
+
+.project-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.project-img img {
+  min-width: 320px;
+}
+
+.project-button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: magenta;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .project {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .project-title {
+    grid-column: 1 / -1;
+  }
+  .project-img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+  }
+  .project-copy {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+  }
 }

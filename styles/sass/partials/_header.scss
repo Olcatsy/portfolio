@@ -1,4 +1,3 @@
-/* HEADER */
 header {
   height: 100vh;
   background-image: url(../assets/wave2.svg);
@@ -11,7 +10,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    padding: 40px 0;
+    padding: $spacing-l;
   }
 
   .title {
@@ -21,18 +20,17 @@ header {
 
   .nav {
     align-self: flex-start;
-    width: 50%;
 
     & ul {
       display: flex;
     }
 
     & li {
-      margin: 0 10px;
+      margin: 0 $spacing-s;
     }
     
     &-link {
-      padding: 10px;
+      padding: $spacing-s;
       border-bottom: 2px solid white;
       transition: $transition;
       text-transform: uppercase;
@@ -42,8 +40,22 @@ header {
       }
     }
   }
-
-
     
 }
-/* END OF HEADER */
+
+
+
+// ****MEDIA QUERIES****
+@media (min-width: $small-tablet) {
+
+}
+
+
+@media (min-width: $large-tablet) {
+
+}
+
+
+@media (min-width: $laptop) {
+
+}
