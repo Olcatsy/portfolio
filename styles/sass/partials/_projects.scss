@@ -1,30 +1,42 @@
 .projects {
-
-
-  
-  
+  @include section(rebeccapurple);
 }
 
 .project {
-  display: grid;
-  grid-gap: $spacing-m;
-  grid-template-columns: 1fr;
-  margin: $spacing-l 0;
 
-  
+  &-inner {
+    display: grid;
+    grid-gap: $spacing-m;
+    grid-template-columns: 1fr;
+  }
 
   &-img {
-    align-self: center;
 
     img {
-      min-width: 320px;
+      min-width: 280px;
     }
   }
 
-  &-button {
-    @include button(magenta)
+  &-skills {
+    font-size: 2.2rem;
   }
 
+  &-buttons {
+    @include flex(column, center, center);
+  }
+
+  &-button {
+    @include button(magenta);
+  }
+
+  &-button:nth-child(1) {
+    margin-bottom: $spacing-m;
+  }
+
+}
+
+.sophie {
+  background: #5B4083;
 }
 // End of PROJECTS
 
@@ -38,10 +50,14 @@
 
 @media (min-width: $large-tablet) {
   .project {
-    grid-template-columns: repeat(2, 1fr);
+
+    &-inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-title {
       grid-column: 1 / -1;
+      align-self: center;
     }
 
     &-img {
@@ -51,7 +67,33 @@
     &-copy {
       grid-column: 2 / span 1;
     }
+
+    &-buttons {
+      @include flex(row, center, center);
+    } 
+
+    &-button:nth-child(1) {
+      margin: 0 $spacing-m 0 0;
+    }
   }
+
+  .project.even {
+    .project-title {
+      justify-self: end;
+    }
+
+    .project-img {
+      grid-column: 2 / span 1;
+      grid-row: 2;
+    }
+
+    .project-copy {
+      grid-column: 1 / span 1;
+      grid-row: 2;
+    }
+  }
+
+
 }
 
 

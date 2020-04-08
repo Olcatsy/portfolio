@@ -1,10 +1,10 @@
 .skills {
+  @include section(#5E3789);
 
   &-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-gap: $spacing-m;
-    width: 80%;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -26,6 +26,10 @@
   p {
     font-size: 2.3rem;
   }
+
+  &-wave {
+    @include wave();
+  }
 }
 
 
@@ -38,7 +42,10 @@
 
 
 @media (min-width: $large-tablet) {
-
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+  }
 }
 
 

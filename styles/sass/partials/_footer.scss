@@ -1,4 +1,22 @@
+.footer {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
 
+  @include flex(column, center, center);
+
+  span {
+    font-weight: 600;
+  }
+
+  a {
+    font-weight: 600;
+
+    @include hover-state {
+      color: magenta;
+    }
+  }
+}
 
 
 

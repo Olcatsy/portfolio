@@ -8,7 +8,9 @@ body {
   color: white;
   font-family: $anonymous;
   background-color: #5B4083;
-  background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
+  // background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
+  background-image: linear-gradient(to bottom, #403682,#7B3890);
+
 }
 
 h1, h2, h3 {
@@ -55,9 +57,6 @@ button {
 
 
 /* COMMON */
-section {
-  margin: $spacing-xl 0;
-}
 
 .wrapper {
   width: 100%;

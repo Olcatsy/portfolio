@@ -1,4 +1,23 @@
+.contact {
 
+  .flex-parent
+   {
+    display: flex;
+  }
+
+  &-social {
+
+    a {
+      font-size: 4rem;
+    }
+  }
+
+  &-email {
+    font-size: 3rem;
+  }
+
+
+}
 
 
 

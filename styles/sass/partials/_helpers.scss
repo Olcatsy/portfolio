@@ -30,8 +30,6 @@ $transition: all 0.3s ease-out;
 
 
 
-
-
 // MIXINS
 
 // flexbox
@@ -59,6 +57,22 @@ $transition: all 0.3s ease-out;
   background-color: $color;
   color: white; 
   text-transform: uppercase;
+}
+
+
+// section wave 
+@mixin wave() {
+  position: relative;
+  z-index: 100;
+  top: -22vw;
+}
+
+@mixin section($bg) {
+  position: relative;
+  top: -22vw;
+  padding-top: 22vw;
+  z-index: 90;
+  background-color: $bg;
 }
 
 
