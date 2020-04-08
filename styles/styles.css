@@ -373,7 +373,6 @@ header .nav-link:hover, header .nav-link:focus {
 .about {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#4F3786));
   background-image: linear-gradient(to bottom, transparent, #4F3786);
-  margin-top: 50px;
 }
 
 .about .flex-parent {
@@ -421,13 +420,6 @@ header .nav-link:hover, header .nav-link:focus {
   border-radius: 50%;
 }
 
-.about-wave {
-  position: relative;
-  z-index: 100;
-  top: -22vw;
-  top: 0;
-}
-
 .about .download {
   padding: 10px 25px;
   border-radius: 20px;
@@ -452,11 +444,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .skills {
-  position: relative;
-  top: -22vw;
-  padding-top: 22vw;
-  z-index: 90;
-  background-color: #5E3789;
+  background: #563787;
 }
 
 .skills-grid {
@@ -489,12 +477,6 @@ header .nav-link:hover, header .nav-link:focus {
   font-size: 2.3rem;
 }
 
-.skills-wave {
-  position: relative;
-  z-index: 100;
-  top: -22vw;
-}
-
 @media (min-width: 769px) {
   .skills-grid {
     -ms-grid-columns: (1fr)[5];
@@ -504,11 +486,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .projects {
-  position: relative;
-  top: -22vw;
-  padding-top: 22vw;
-  z-index: 90;
-  background-color: rebeccapurple;
+  background: #5E3789;
 }
 
 .project-inner {
@@ -558,7 +536,23 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .sophie {
-  background: #5B4083;
+  background: #5E3789;
+}
+
+.flashback {
+  background: #65378B;
+}
+
+.color-grid {
+  background: #6C388D;
+}
+
+.analog {
+  background: #74388E;
+}
+
+.bite-sized {
+  background: #7B3890;
 }
 
 @media (min-width: 769px) {
@@ -622,6 +616,10 @@ header .nav-link:hover, header .nav-link:focus {
   }
 }
 
+.contact {
+  background: #6F3A85;
+}
+
 .contact .flex-parent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,6 +638,7 @@ header .nav-link:hover, header .nav-link:focus {
   font-size: 1.4rem;
   letter-spacing: 1px;
   line-height: 1.5;
+  background: #6F3A85;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

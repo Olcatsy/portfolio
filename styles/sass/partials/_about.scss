@@ -1,6 +1,5 @@
 .about {
   background-image: linear-gradient(to bottom, transparent, #4F3786);
-  margin-top: $spacing-l;
 
   .flex-parent {
     @include flex(column-reverse, center, center);
@@ -18,11 +17,6 @@
     img {
       border-radius: 50%;
     }
-  }
-
-  &-wave {
-    @include wave();
-    top: 0;
   }
 
   .download {

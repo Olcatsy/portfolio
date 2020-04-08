@@ -1,5 +1,5 @@
 .projects {
-  @include section(rebeccapurple);
+  background: #5E3789; 
 }
 
 .project {
@@ -32,12 +32,28 @@
   &-button:nth-child(1) {
     margin-bottom: $spacing-m;
   }
-
 }
 
 .sophie {
-  background: #5B4083;
+  background: #5E3789;
 }
+
+.flashback {
+  background: #65378B;
+}
+
+.color-grid {
+  background: #6C388D;
+}
+
+.analog {
+  background: #74388E;
+}
+
+.bite-sized {
+  background: #7B3890;
+}
+
 // End of PROJECTS
 
 

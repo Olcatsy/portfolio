@@ -1,5 +1,6 @@
 .skills {
-  @include section(#5E3789);
+  background: #563787;
+
 
   &-grid {
     display: grid;
@@ -25,10 +26,6 @@
 
   p {
     font-size: 2.3rem;
-  }
-
-  &-wave {
-    @include wave();
   }
 }
 
