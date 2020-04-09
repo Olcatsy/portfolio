@@ -1,22 +1,7 @@
-html {
-  font-size: 62.5%; /* 10px */
-}
-
 body {
-  font-size: 1.8rem;
   position: relative;
-  color: white;
-  font-family: $anonymous;
   background-color: #5B4083;
-  // background-image: linear-gradient(to bottom, rgb(51, 43, 100), #5B4083);
-  background-image: linear-gradient(to bottom, #403682,#7B3890);
-
-}
-
-h1, h2, h3 {
-  font-family: $rajdhani;
-  text-transform: capitalize;
-  letter-spacing: 2px;
+  background-image: linear-gradient(to bottom, #403682, #5B4083);
 }
 
 
@@ -57,14 +42,9 @@ button {
 
 
 /* COMMON */
-
 .wrapper {
   width: 100%;
   padding: 0 20px
-}
-
-.section-header {
-  text-transform: uppercase;
 }
 
 .copy {
@@ -87,6 +67,7 @@ button {
     max-width: 2000px;
     width: 80%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 

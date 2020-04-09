@@ -242,19 +242,38 @@ html {
 }
 
 body {
-  font-size: 1.8rem;
-  position: relative;
   color: white;
   font-family: "Anonymous Pro", sans-serif;
-  background-color: #5B4083;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#403682), to(#7B3890));
-  background-image: linear-gradient(to bottom, #403682, #7B3890);
+  font-size: 1.9rem;
+  line-height: 1.2;
 }
 
 h1, h2, h3 {
   font-family: "Rajdhani", sans-serif;
-  text-transform: capitalize;
   letter-spacing: 2px;
+}
+
+.section-title {
+  text-align: center;
+  margin: 30px auto 100px;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.project-skills {
+  font-size: 2.2rem;
+}
+
+body {
+  position: relative;
+  background-color: #5B4083;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#403682), to(#5B4083));
+  background-image: linear-gradient(to bottom, #403682, #5B4083);
 }
 
 /* STRIPPING STYLES */
@@ -298,10 +317,6 @@ button {
   padding: 0 20px;
 }
 
-.section-header {
-  text-transform: uppercase;
-}
-
 .copy {
   margin: 30px 0;
 }
@@ -311,12 +326,13 @@ button {
     max-width: 2000px;
     width: 80%;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 header {
   height: 100vh;
-  background-image: url(../assets/wave2.svg);
+  background-image: url(../assets/wave1.svg);
   background-size: cover;
   background-position: right;
   position: relative;
@@ -469,7 +485,7 @@ header .nav-link:hover, header .nav-link:focus {
 
 .skills .icon {
   font-size: 4.5rem;
-  width: 4.5rem;
+  height: 4.5rem;
   display: inline-block;
 }
 
@@ -489,6 +505,11 @@ header .nav-link:hover, header .nav-link:focus {
   background: #5E3789;
 }
 
+.project {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .project-inner {
   display: -ms-grid;
   display: grid;
@@ -497,12 +518,16 @@ header .nav-link:hover, header .nav-link:focus {
       grid-template-columns: 1fr;
 }
 
-.project-img img {
-  min-width: 280px;
+.project-img {
+  min-width: 320px;
 }
 
-.project-skills {
-  font-size: 2.2rem;
+.project-title {
+  margin-bottom: 50px;
+}
+
+.project-link {
+  font-weight: 600;
 }
 
 .project-buttons {
@@ -513,8 +538,8 @@ header .nav-link:hover, header .nav-link:focus {
       flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: default;
+          flex-direction: default;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -532,7 +557,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .project-button:nth-child(1) {
-  margin-bottom: 30px;
+  margin-right: 30px;
 }
 
 .sophie {
@@ -560,12 +585,6 @@ header .nav-link:hover, header .nav-link:focus {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .project-title {
-    grid-column: 1 / -1;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
   .project-img {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -575,6 +594,7 @@ header .nav-link:hover, header .nav-link:focus {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / span 1;
+    text-align: center;
   }
   .project-buttons {
     display: -webkit-box;
@@ -597,8 +617,9 @@ header .nav-link:hover, header .nav-link:focus {
     margin: 0 30px 0 0;
   }
   .project.even .project-title {
-    -ms-grid-column-align: end;
-        justify-self: end;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
   }
   .project.even .project-img {
     -ms-grid-column: 2;
@@ -620,18 +641,18 @@ header .nav-link:hover, header .nav-link:focus {
   background: #6F3A85;
 }
 
-.contact .flex-parent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .contact-social a {
   font-size: 4rem;
 }
 
 .contact-email {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 769px) {
+  .contact-email {
+    font-size: 3rem;
+  }
 }
 
 .footer {

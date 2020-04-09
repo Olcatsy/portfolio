@@ -3,6 +3,8 @@
 }
 
 .project {
+  text-align: center;
+  padding-bottom: $spacing-l;
 
   &-inner {
     display: grid;
@@ -11,18 +13,19 @@
   }
 
   &-img {
-
-    img {
-      min-width: 280px;
-    }
+    min-width: 320px;
   }
 
-  &-skills {
-    font-size: 2.2rem;
+  &-title {
+    margin-bottom: $spacing-l;
+  }
+
+  &-link {
+    font-weight: 600;
   }
 
   &-buttons {
-    @include flex(column, center, center);
+    @include flex(default, center, center);
   }
 
   &-button {
@@ -30,7 +33,7 @@
   }
 
   &-button:nth-child(1) {
-    margin-bottom: $spacing-m;
+    margin-right: $spacing-m;
   }
 }
 
@@ -53,8 +56,8 @@
 .bite-sized {
   background: #7B3890;
 }
-
 // End of PROJECTS
+
 
 
 
@@ -71,17 +74,13 @@
       grid-template-columns: repeat(2, 1fr);
     }
 
-    &-title {
-      grid-column: 1 / -1;
-      align-self: center;
-    }
-
     &-img {
       grid-column: 1 / span 1;
     }
 
     &-copy {
       grid-column: 2 / span 1;
+      text-align: center;
     }
 
     &-buttons {
@@ -95,7 +94,7 @@
 
   .project.even {
     .project-title {
-      justify-self: end;
+      grid-column: 1 / span 1;
     }
 
     .project-img {

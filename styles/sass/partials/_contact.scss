@@ -1,10 +1,6 @@
 .contact {
   background: #6F3A85;
 
-  .flex-parent
-   {
-    display: flex;
-  }
 
   &-social {
 
@@ -14,7 +10,7 @@
   }
 
   &-email {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -28,7 +24,12 @@
 }
 
 @media (min-width: $large-tablet) {
+  .contact {
 
+    &-email {
+      font-size: 3rem;
+    }
+  }
 }
 
 @media (min-width: $laptop) {

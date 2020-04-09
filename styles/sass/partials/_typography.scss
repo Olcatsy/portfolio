@@ -1,0 +1,59 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Rajdhani:500,600|Rubik:400,500|Teko&display=swap');
+
+$body: "Anonymous Pro", sans-serif;
+$headers: "Rajdhani", sans-serif;
+
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  color: white;
+  font-family: $body;
+  font-size: 1.9rem;
+  line-height: 1.2;
+}
+
+h1, h2, h3 {
+  font-family: $headers;
+  letter-spacing: 2px;
+}
+
+.title {
+
+}
+
+.subtitle {
+
+}
+
+.nav-link {
+  
+}
+
+.section-title {
+  text-align: center;
+  margin: $spacing-m auto $spacing-xl;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.project-skills {
+  font-size: 2.2rem;
+}
+
+.social-link {
+
+}
+
+.contact-email {
+
+}
+
