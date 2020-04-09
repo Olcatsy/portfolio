@@ -29,7 +29,7 @@
   }
 
   &-button {
-    @include button(magenta);
+    @include button($accent2, $accent5);
   }
 
   &-button:nth-child(1) {

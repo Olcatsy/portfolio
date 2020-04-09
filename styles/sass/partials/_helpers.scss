@@ -1,8 +1,9 @@
 
 // COLORS
 $primary: #5B4083;
-$accent1: #FD7C20;
-$accent2: #B600A6;
+$accent1: #FCB838;
+// $accent1: #FD7C20;
+$accent2: rgb(218, 7, 200);
 $accent3: #3CB87A;
 $accent4: #50C2DA;
 $accent5: #D31B65;
@@ -50,10 +51,11 @@ $transition: all 0.3s ease-out;
 }
 
 //button 
-@mixin button($color) {
+@mixin button($color1, $color2) {
   padding: 10px 25px;
   border-radius: 20px;
-  background-color: $color;
+  background-color: $color1;
+  background-image: linear-gradient(to right, $color1, $color2);
   color: white; 
   text-transform: uppercase;
 }

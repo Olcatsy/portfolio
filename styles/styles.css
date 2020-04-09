@@ -254,11 +254,12 @@ h1, h2, h3 {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .subtitle {
   font-family: "Anonymous Pro", sans-serif;
+  font-size: 3rem;
 }
 
 .nav-link {
@@ -524,7 +525,9 @@ header .nav .close {
 .about .download {
   padding: 10px 25px;
   border-radius: 20px;
-  background-color: darkorange;
+  background-color: #FCB838;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FCB838), to(#da07c8));
+  background-image: linear-gradient(to right, #FCB838, #da07c8);
   color: white;
   text-transform: uppercase;
 }
@@ -639,7 +642,9 @@ header .nav .close {
 .project-button {
   padding: 10px 25px;
   border-radius: 20px;
-  background-color: magenta;
+  background-color: #da07c8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#da07c8), to(#D31B65));
+  background-image: linear-gradient(to right, #da07c8, #D31B65);
   color: white;
   text-transform: uppercase;
 }
