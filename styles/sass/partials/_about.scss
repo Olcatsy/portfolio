@@ -26,6 +26,7 @@
 
   .download {
     @include button($accent1, $accent2);
+    letter-spacing: 2px;
   }
 }
 

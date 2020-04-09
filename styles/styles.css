@@ -530,6 +530,7 @@ header .nav .close {
   background-image: linear-gradient(to right, #FCB838, #da07c8);
   color: white;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 769px) {
