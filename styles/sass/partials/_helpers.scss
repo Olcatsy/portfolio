@@ -1,5 +1,6 @@
 
 // COLORS
+$primary: #5B4083;
 $accent1: #FD7C20;
 $accent2: #B600A6;
 $accent3: #3CB87A;
@@ -57,11 +58,11 @@ $transition: all 0.3s ease-out;
   text-transform: uppercase;
 }
 
-@mixin section($bg) {
-  background: $bg;
+
+// text-shadow
+@mixin text-shadow($color) {
+  text-shadow: 2px 2px 0 $color;
 }
-
-
 
 
 

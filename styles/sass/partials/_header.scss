@@ -2,27 +2,48 @@ header {
   height: 100vh;
   background-image: url(../assets/wave1.svg);
   background-size: cover;
-  background-position: center;
+  background-position: top right;
   position: relative;
 
   .flex-parent {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: 100vh;
     padding: $spacing-l;
+    position: relative;
+  }
+
+  .title-container {
+    align-self: flex-end;
+    text-align: center;
   }
 
   .title {
-    align-self: flex-end;
-    text-align: end;
+    margin-bottom: $spacing-s;
   }
 
   .nav {
-    align-self: flex-start;
+
+    .hamburger {
+      background: transparent;
+      color: white;
+      font-size: 5rem;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
 
     & ul {
-      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: $primary;
+      padding: 0 $spacing-l 0 $spacing-m;
+
+      // hidden on mobile
+      display: none;
     }
 
     & li {
@@ -30,14 +51,23 @@ header {
     }
     
     &-link {
-      padding: $spacing-s;
-      border-bottom: 2px solid white;
+      padding: $spacing-m;
+      padding-left: 0;
       transition: $transition;
       text-transform: uppercase;
+      font-size: 2.5rem;
 
       @include hover-state {
         border-color: transparent;
       }
+    }
+
+    .close {
+      background: transparent;
+      color: white;
+      padding: $spacing-m;
+      font-size: 4rem;
+      border: none;
     }
   }
     
@@ -47,7 +77,36 @@ header {
 
 // ****MEDIA QUERIES****
 @media (min-width: $small-tablet) {
+  header {
+    background-position: center;
 
+    .flex-parent {
+      justify-content: space-between;
+    }
+
+    .title-container {
+      text-align: end;
+    }
+
+    .nav {
+      align-self: flex-start; 
+
+      & ul {
+        @include flex(row, center, start);
+        position: static;
+        background: none;
+        padding: 0;
+      }
+
+      &-link {
+        border-bottom: 2px solid white;
+        padding: $spacing-s;
+      }
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
 }
 
 

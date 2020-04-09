@@ -253,6 +253,19 @@ h1, h2, h3 {
   letter-spacing: 2px;
 }
 
+.title {
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-family: "Anonymous Pro", sans-serif;
+}
+
+.nav-link {
+  font-family: "Rajdhani", sans-serif;
+  letter-spacing: 2px;
+}
+
 .section-title {
   text-align: center;
   margin: 30px auto 100px;
@@ -334,7 +347,7 @@ header {
   height: 100vh;
   background-image: url(../assets/wave1.svg);
   background-size: cover;
-  background-position: center;
+  background-position: top right;
   position: relative;
 }
 
@@ -346,28 +359,41 @@ header .flex-parent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   padding: 50px;
+  position: relative;
+}
+
+header .title-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
 }
 
 header .title {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  text-align: end;
+  margin-bottom: 10px;
 }
 
-header .nav {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+header .nav .hamburger {
+  background: transparent;
+  color: white;
+  font-size: 5rem;
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }
 
 header .nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #5B4083;
+  padding: 0 50px 0 30px;
+  display: none;
 }
 
 header .nav li {
@@ -375,15 +401,69 @@ header .nav li {
 }
 
 header .nav-link {
-  padding: 10px;
-  border-bottom: 2px solid white;
+  padding: 30px;
+  padding-left: 0;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 header .nav-link:hover, header .nav-link:focus {
   border-color: transparent;
+}
+
+header .nav .close {
+  background: transparent;
+  color: white;
+  padding: 30px;
+  font-size: 4rem;
+  border: none;
+}
+
+@media (min-width: 481px) {
+  header {
+    background-position: center;
+  }
+  header .flex-parent {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .title-container {
+    text-align: end;
+  }
+  header .nav {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  header .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    position: static;
+    background: none;
+    padding: 0;
+  }
+  header .nav-link {
+    border-bottom: 2px solid white;
+    padding: 10px;
+  }
+  header .mobile-only {
+    display: none;
+  }
 }
 
 .about {
@@ -392,7 +472,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .about .flex-parent {
-  padding: 50px;
+  padding: 100px 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,6 +740,7 @@ header .nav-link:hover, header .nav-link:focus {
   font-size: 2.8rem;
   font-style: normal;
   letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #D31B65;
 }
 
 .contact-social {
@@ -690,6 +771,7 @@ header .nav-link:hover, header .nav-link:focus {
 @media (min-width: 769px) {
   .contact-social ul {
     width: 60%;
+    margin: 0 auto;
   }
   .contact-email {
     font-size: 3rem;

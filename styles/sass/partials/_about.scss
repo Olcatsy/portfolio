@@ -2,7 +2,7 @@
   background-image: linear-gradient(to bottom, transparent, #4F3786);
   
   .flex-parent {
-    padding: $spacing-l;
+    padding: $spacing-xl $spacing-l 0;
     @include flex(column-reverse, center, center);
   }
 

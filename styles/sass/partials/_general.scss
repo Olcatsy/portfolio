@@ -1,7 +1,7 @@
 body {
   position: relative;
-  background-color: #5B4083;
-  background-image: linear-gradient(to bottom, #403682, #5B4083);
+  background-color: $primary;
+  background-image: linear-gradient(to bottom, #403682, $primary);
 }
 
 
