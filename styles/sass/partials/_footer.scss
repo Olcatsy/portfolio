@@ -3,6 +3,7 @@
   letter-spacing: 1px;
   line-height: 1.5;
   background: #6F3A85;
+  padding: $spacing-s 0;
 
   @include flex(column, center, center);
 

@@ -334,7 +334,7 @@ header {
   height: 100vh;
   background-image: url(../assets/wave1.svg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   position: relative;
 }
 
@@ -392,6 +392,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .about .flex-parent {
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,6 +408,10 @@ header .nav-link:hover, header .nav-link:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about .section-title {
+  margin: 30px 0;
 }
 
 .about-copy {
@@ -429,7 +434,7 @@ header .nav-link:hover, header .nav-link:focus {
 }
 
 .about-img {
-  width: 90%;
+  width: 80%;
 }
 
 .about-img img {
@@ -450,9 +455,12 @@ header .nav-link:hover, header .nav-link:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .about-img {
-    max-width: 40%;
+    max-width: 35%;
   }
   .about-copy {
     max-width: 60%;
@@ -639,17 +647,50 @@ header .nav-link:hover, header .nav-link:focus {
 
 .contact {
   background: #6F3A85;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact .section-title {
+  margin: 50px 0;
+}
+
+.contact-email {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.8rem;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.contact-social {
+  margin: 50px 0;
+}
+
+.contact-social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: default;
+          flex-direction: default;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-social a {
   font-size: 4rem;
 }
 
-.contact-email {
-  font-size: 2rem;
-}
-
 @media (min-width: 769px) {
+  .contact-social ul {
+    width: 60%;
+  }
   .contact-email {
     font-size: 3rem;
   }
@@ -660,6 +701,7 @@ header .nav-link:hover, header .nav-link:focus {
   letter-spacing: 1px;
   line-height: 1.5;
   background: #6F3A85;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

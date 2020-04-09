@@ -1,16 +1,29 @@
 .contact {
   background: #6F3A85;
+  text-align: center;
+  padding-bottom: $spacing-l;
 
+  .section-title {
+    margin: $spacing-l 0;
+  }
 
-  &-social {
+  &-email {
+    font-family: $headers;
+    font-size: 2.8rem;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  &-social  {
+    margin: $spacing-l 0;
+
+    ul {
+      @include flex(default, space-around, center);
+    }
 
     a {
       font-size: 4rem;
     }
-  }
-
-  &-email {
-    font-size: 2rem;
   }
 }
 
@@ -25,6 +38,12 @@
 
 @media (min-width: $large-tablet) {
   .contact {
+
+    &-social {
+      ul {
+        width: 60%;
+      }
+    }
 
     &-email {
       font-size: 3rem;
