@@ -39,8 +39,10 @@ header {
       top: 0;
       left: 0;
       bottom: 0;
+      width: 100%;
       background: $primary;
-      padding: 0 $spacing-l 0 $spacing-m;
+      padding-top: $spacing-l;
+      text-align: center;
 
       // hidden on mobile
       display: none;
@@ -52,7 +54,6 @@ header {
     
     &-link {
       padding: $spacing-m;
-      padding-left: 0;
       transition: $transition;
       text-transform: uppercase;
       font-size: 2.5rem;
@@ -101,6 +102,7 @@ header {
       &-link {
         border-bottom: 2px solid white;
         padding: $spacing-s;
+        padding-left: 0;
       }
     }
     .mobile-only {
