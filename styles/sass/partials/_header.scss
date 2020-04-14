@@ -22,10 +22,7 @@ header {
   .title {
     margin-bottom: $spacing-s;
   }
-
-  .nav {
-
-    .hamburger {
+.hamburger {
       background: transparent;
       color: white;
       font-size: 5rem;
@@ -34,9 +31,12 @@ header {
       left: 10px;
       text-shadow: $dark-text-shadow;
     }
+  .nav {
+
+    
 
     & ul {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       bottom: 0;

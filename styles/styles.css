@@ -389,7 +389,7 @@ header .title {
   margin-bottom: 10px;
 }
 
-header .nav .hamburger {
+header .hamburger {
   background: transparent;
   color: white;
   font-size: 5rem;
@@ -400,7 +400,7 @@ header .nav .hamburger {
 }
 
 header .nav ul {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
