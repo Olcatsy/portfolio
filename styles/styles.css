@@ -382,7 +382,7 @@ header .nav .hamburger {
   background: transparent;
   color: white;
   font-size: 5rem;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px;
 }
