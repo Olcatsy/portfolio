@@ -2,7 +2,7 @@ header {
   height: 100vh;
   background-image: url(../assets/wave1.svg);
   background-size: cover;
-  background-position: top right;
+  background-position: bottom;
   position: relative;
 
   .flex-parent {
@@ -29,13 +29,14 @@ header {
       background: transparent;
       color: white;
       font-size: 5rem;
-      position: absolute;
+      position: fixed;
       top: 10px;
       left: 10px;
+      text-shadow: $dark-text-shadow;
     }
 
     & ul {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
@@ -78,6 +79,9 @@ header {
 
 // ****MEDIA QUERIES****
 @media (min-width: $small-tablet) {
+
+}
+@media (min-width: $large-tablet) {
   header {
     background-position: center;
 
@@ -112,9 +116,7 @@ header {
 }
 
 
-@media (min-width: $large-tablet) {
 
-}
 
 
 @media (min-width: $laptop) {

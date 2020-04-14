@@ -245,12 +245,18 @@ body {
   color: white;
   font-family: "Anonymous Pro", sans-serif;
   font-size: 1.9rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 h1, h2, h3 {
   font-family: "Rajdhani", sans-serif;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #303030;
+}
+
+.copy {
+  margin: 30px 0;
+  letter-spacing: 1px;
 }
 
 .title {
@@ -281,6 +287,15 @@ h1, h2, h3 {
 
 .project-skills {
   font-size: 2.2rem;
+}
+
+@media (min-width: 481px) {
+  .title {
+    font-size: 9rem;
+  }
+  .subtitle {
+    font-size: 4rem;
+  }
 }
 
 body {
@@ -331,10 +346,6 @@ button {
   padding: 0 20px;
 }
 
-.copy {
-  margin: 30px 0;
-}
-
 @media (min-width: 769px) {
   .wrapper {
     max-width: 2000px;
@@ -348,7 +359,7 @@ header {
   height: 100vh;
   background-image: url(../assets/wave1.svg);
   background-size: cover;
-  background-position: top right;
+  background-position: bottom;
   position: relative;
 }
 
@@ -382,13 +393,14 @@ header .nav .hamburger {
   background: transparent;
   color: white;
   font-size: 5rem;
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
+  text-shadow: 1px 1px 0 #303030;
 }
 
 header .nav ul {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
@@ -423,7 +435,7 @@ header .nav .close {
   border: none;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
   header {
     background-position: center;
   }
@@ -475,7 +487,7 @@ header .nav .close {
 }
 
 .about .flex-parent {
-  padding: 100px 50px 0;
+  padding: 100px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,6 +528,10 @@ header .nav .close {
           align-items: center;
 }
 
+.about-copy .middle-p {
+  margin: 0;
+}
+
 .about-img {
   width: 80%;
 }
@@ -527,12 +543,30 @@ header .nav .close {
 .about .download {
   padding: 10px 25px;
   border-radius: 20px;
-  background-color: #FCB838;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FCB838), to(#da07c8));
-  background-image: linear-gradient(to right, #FCB838, #da07c8);
+  background-color: #FD7C20;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FD7C20), to(#DA07C8));
+  background-image: linear-gradient(to right, #FD7C20, #DA07C8);
+  background-size: 200% 100%;
+  background-position: 0;
   color: white;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 0 #303030;
+  -webkit-box-shadow: 1px 1px 2px #303030;
+          box-shadow: 1px 1px 2px #303030;
+  -webkit-transition: background-position 0.75s ease;
+  transition: background-position 0.75s ease;
   letter-spacing: 2px;
+}
+
+.about .download:hover, .about .download:focus {
+  background-position: 100%;
+}
+
+@media (min-width: 481px) {
+  .about .flex-parent {
+    padding: 100px 50px 30px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -610,10 +644,13 @@ header .nav .close {
   grid-gap: 30px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  padding: 50px 20px;
 }
 
 .project-img {
   min-width: 320px;
+  -webkit-box-shadow: 1px 1px 4px #303030;
+          box-shadow: 1px 1px 4px #303030;
 }
 
 .project-title {
@@ -622,6 +659,10 @@ header .nav .close {
 
 .project-link {
   font-weight: 600;
+}
+
+.project-link:hover, .project-link:focus {
+  color: #FD7C20;
 }
 
 .project-buttons {
@@ -645,11 +686,23 @@ header .nav .close {
 .project-button {
   padding: 10px 25px;
   border-radius: 20px;
-  background-color: #da07c8;
-  background-image: -webkit-gradient(linear, left top, right top, from(#da07c8), to(#D31B65));
-  background-image: linear-gradient(to right, #da07c8, #D31B65);
+  background-color: #DA07C8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#DA07C8), to(#FD7C20));
+  background-image: linear-gradient(to right, #DA07C8, #FD7C20);
+  background-size: 200% 100%;
+  background-position: 0;
   color: white;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 0 #303030;
+  -webkit-box-shadow: 1px 1px 2px #303030;
+          box-shadow: 1px 1px 2px #303030;
+  -webkit-transition: background-position 0.75s ease;
+  transition: background-position 0.75s ease;
+}
+
+.project-button:hover, .project-button:focus {
+  background-position: 100%;
 }
 
 .project-button:nth-child(1) {
@@ -743,12 +796,20 @@ header .nav .close {
   margin: 50px 0;
 }
 
-.contact-email {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 2.8rem;
+.contact address {
   font-style: normal;
+  font-size: 2.2rem;
+}
+
+.contact-email {
+  font-size: 2.5rem;
+  font-family: "Rajdhani", sans-serif;
   letter-spacing: 2px;
   text-shadow: 2px 2px 0 #D31B65;
+}
+
+.contact-email:hover, .contact-email:focus {
+  scale: 1.1;
 }
 
 .contact-social {
@@ -774,6 +835,10 @@ header .nav .close {
 
 .contact-social a {
   font-size: 4rem;
+}
+
+.contact-social a:hover, .contact-social a:focus {
+  scale: 1.1;
 }
 
 @media (min-width: 769px) {
@@ -818,5 +883,5 @@ header .nav .close {
 }
 
 .footer a:hover, .footer a:focus {
-  color: magenta;
+  color: #FD7C20;
 }

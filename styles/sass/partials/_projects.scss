@@ -10,10 +10,12 @@
     display: grid;
     grid-gap: $spacing-m;
     grid-template-columns: 1fr;
+    padding: $spacing-l 20px;
   }
 
   &-img {
     min-width: 320px;
+    box-shadow: $dark-box-shadow;
   }
 
   &-title {
@@ -22,6 +24,10 @@
 
   &-link {
     font-weight: 600;
+
+    @include hover-state {
+      color: $accent1;
+    }
   }
 
   &-buttons {
@@ -29,7 +35,7 @@
   }
 
   &-button {
-    @include button($accent2, $accent5);
+    @include button($accent2, $accent1);
   }
 
   &-button:nth-child(1) {
@@ -37,6 +43,7 @@
   }
 }
 
+// bg colors are a gradient from darker purple with blue undertone to lighter purple with red undertone
 .sophie {
   background: #5E3789;
 }

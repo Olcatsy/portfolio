@@ -7,12 +7,20 @@
     margin: $spacing-l 0;
   }
 
-  &-email {
-    font-family: $headers;
-    font-size: 2.8rem;
+  address {
     font-style: normal;
+    font-size: 2.2rem;
+  }
+
+  &-email {
+    font-size: 2.5rem;
+    font-family: $headers;
     letter-spacing: 2px;
-    @include text-shadow($accent5);
+    @include color-text-shadow($accent5);
+
+    @include hover-state {
+      scale: 1.1;
+    }
   }
 
   &-social  {
@@ -24,6 +32,10 @@
 
     a {
       font-size: 4rem;
+
+      @include hover-state {
+        scale: 1.1;
+      }
     }
   }
 }

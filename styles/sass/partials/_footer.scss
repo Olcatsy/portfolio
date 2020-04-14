@@ -15,7 +15,7 @@
     font-weight: 600;
 
     @include hover-state {
-      color: magenta;
+      color: $accent1;
     }
   }
 }
