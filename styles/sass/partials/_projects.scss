@@ -15,7 +15,10 @@
 
   &-img {
     min-width: 320px;
-    box-shadow: $dark-box-shadow;
+
+    img {
+      box-shadow: $dark-box-shadow;
+    }
   }
 
   &-title {
