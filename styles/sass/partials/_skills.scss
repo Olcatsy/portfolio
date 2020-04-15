@@ -14,7 +14,19 @@
     display: grid;
     justify-items: center;
     grid-gap: $spacing-s;
+  }
 
+  li:nth-child(3n + 1) .icon {
+    @include color-text-shadow($accent1);
+  }
+
+
+  li:nth-child(3n + 2) .icon {
+    @include color-text-shadow($accent2);
+  }
+
+  li:nth-child(3n + 3) .icon {
+    @include color-text-shadow($accent4);
   }
 
   .icon {

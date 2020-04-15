@@ -298,6 +298,10 @@ h1, h2, h3 {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background-color: #5B4083;
@@ -613,6 +617,21 @@ header .nav .close {
   grid-gap: 10px;
 }
 
+.skills li:nth-child(3n + 1) .icon {
+  -webkit-filter: drop-shadow(4px 2px 0 #FD7C20) drop-shadow(1px 1px 0 #303030);
+          filter: drop-shadow(4px 2px 0 #FD7C20) drop-shadow(1px 1px 0 #303030);
+}
+
+.skills li:nth-child(3n + 2) .icon {
+  -webkit-filter: drop-shadow(4px 2px 0 #DA07C8) drop-shadow(1px 1px 0 #303030);
+          filter: drop-shadow(4px 2px 0 #DA07C8) drop-shadow(1px 1px 0 #303030);
+}
+
+.skills li:nth-child(3n + 3) .icon {
+  -webkit-filter: drop-shadow(4px 2px 0 #50C2DA) drop-shadow(1px 1px 0 #303030);
+          filter: drop-shadow(4px 2px 0 #50C2DA) drop-shadow(1px 1px 0 #303030);
+}
+
 .skills .icon {
   font-size: 4.5rem;
   height: 4.5rem;
@@ -810,7 +829,8 @@ header .nav .close {
   font-size: 2.5rem;
   font-family: "Rajdhani", sans-serif;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #D31B65;
+  -webkit-filter: drop-shadow(4px 2px 0 #D31B65) drop-shadow(1px 1px 0 #303030);
+          filter: drop-shadow(4px 2px 0 #D31B65) drop-shadow(1px 1px 0 #303030);
 }
 
 .contact-email:hover, .contact-email:focus {

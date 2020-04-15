@@ -1,8 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background-color: $primary;
   background-image: linear-gradient(to bottom, #403682, $primary);
-  // scroll-behavior: smooth;
 }
 
 
