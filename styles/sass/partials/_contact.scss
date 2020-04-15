@@ -16,7 +16,7 @@
     font-size: 2.5rem;
     font-family: $headers;
     letter-spacing: 2px;
-    @include color-text-shadow($accent5);
+    text-shadow: 2px 2px 0 $accent5;
 
     @include hover-state {
       scale: 1.1;

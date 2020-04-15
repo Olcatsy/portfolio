@@ -7,7 +7,9 @@
   }
 
   .section-title {
+
     margin: $spacing-m 0;
+    z-index: 40;
   }
 
   &-copy {
@@ -22,7 +24,35 @@
 
   &-img {
     width: 80%;
-    
+    position: relative;
+    z-index: 20;
+
+    &:before,
+    &:after {
+      display: block;
+      content: "";
+      width: 220px;
+      height: 220px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      background: $accent2;
+      bottom: -25%;
+      right: -10%;
+      z-index: 30;
+      opacity: 0.5;
+    }
+
+    &:after {
+      background: $accent1;
+      bottom: 0;
+      right: -20%;
+      z-index: -1;
+      opacity: 1;
+    }
+
     img {
       border-radius: 50%;
     }

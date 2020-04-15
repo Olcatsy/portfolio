@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background-image: url(../assets/wave1.svg);
+  background-image: url(../assets/wave.svg);
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -22,19 +22,19 @@ header {
   .title {
     margin-bottom: $spacing-s;
   }
-.hamburger {
-      background: transparent;
-      color: white;
-      font-size: 5rem;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      text-shadow: $dark-text-shadow;
-      padding: 0;
-    }
-  .nav {
 
-    
+  .hamburger {
+    background: transparent;
+    color: white;
+    font-size: 5rem;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    text-shadow: $dark-text-shadow;
+    padding: 0;
+  }
+
+  .nav {
 
     & ul {
       position: fixed;
@@ -84,7 +84,6 @@ header {
 }
 @media (min-width: $large-tablet) {
   header {
-    background-position: center;
 
     .flex-parent {
       justify-content: space-between;

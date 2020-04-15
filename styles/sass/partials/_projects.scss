@@ -23,6 +23,7 @@
 
   &-title {
     margin-bottom: $spacing-l;
+    @include flex(default, center, center);
   }
 
   &-link {
@@ -48,23 +49,23 @@
 
 // bg colors are a gradient from darker purple with blue undertone to lighter purple with red undertone
 .sophie {
-  background: #5E3789;
+  @include project(#5E3789, "../assets/projects-favicons/fav-sophie.png");
 }
 
 .flashback {
-  background: #65378B;
+  @include project(#65378B, "../assets/projects-favicons/fav-flashback.png");
 }
 
 .color-grid {
-  background: #6C388D;
+  @include project(#6C388D, "../assets/projects-favicons/fav-cgg.png");
 }
 
 .analog {
-  background: #74388E;
+  @include project(#74388E, "../assets/projects-favicons/fav-analog.png");
 }
 
 .bite-sized {
-  background: #7B3890;
+  @include project(#7B3890, "../assets/projects-favicons/fav-bite.png");
 }
 // End of PROJECTS
 
@@ -79,6 +80,7 @@
 
 @media (min-width: $large-tablet) {
   .project {
+    padding: 0;
 
     &-inner {
       grid-template-columns: repeat(2, 1fr);

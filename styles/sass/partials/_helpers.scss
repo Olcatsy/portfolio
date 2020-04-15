@@ -3,8 +3,7 @@
 $primary: #5B4083;
 $accent1: #FD7C20;
 $accent2: #DA07C8;
-$accent3: #3CB87A;
-$accent4: #50C2DA;
+$accent4:#2287EF;
 $accent5: #D31B65;
 $shadow: #303030;
 
@@ -72,7 +71,25 @@ $dark-box-shadow: 1px 1px 4px $shadow;
 // text-shadow
 @mixin color-text-shadow($color) {
   filter: drop-shadow(4px 2px 0 $color) drop-shadow($dark-text-shadow);
-  // text-shadow: 2px 2px 0 $color;
+}
+
+// project favicons
+@mixin project-fav($bg) {
+  display: block;
+  content: "";
+  height: 1em;
+  width: 1em;
+  margin: 10px;
+  background: url($bg);
+  background-size: cover;
+}
+
+@mixin project($bg-color, $favicon) {
+  background: $bg-color;
+
+  .project-title:before {
+    @include project-fav($favicon);
+  }
 }
 
 
