@@ -44,19 +44,9 @@
 
 
 // ****MEDIA QUERIES****
-@media (min-width: $small-tablet) {
-
-}
-
-
 @media (min-width: $large-tablet) {
   .skills-grid {
     grid-template-columns: repeat(5, 1fr);
     width: 80%;
   }
-}
-
-
-@media (min-width: $laptop) {
-
 }

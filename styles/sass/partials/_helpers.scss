@@ -68,9 +68,9 @@ $dark-box-shadow: 1px 1px 4px $shadow;
 }
 
 
-// text-shadow
+// colorful text-shadow
 @mixin color-text-shadow($color) {
-  filter: drop-shadow(4px 2px 0 $color) drop-shadow($dark-text-shadow);
+  filter: drop-shadow(3px 2px 0 $color) drop-shadow($dark-text-shadow);
 }
 
 // project favicons
