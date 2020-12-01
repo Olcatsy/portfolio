@@ -690,6 +690,9 @@ header .nav .close {
 .project-inner {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-gap: 30px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -833,17 +836,17 @@ header .nav .close {
   background-size: cover;
 }
 
-.bite-sized {
+.worms {
   background: #7B3890;
 }
 
-.bite-sized .project-title:before {
+.worms .project-title:before {
   display: block;
   content: "";
   height: 1em;
   width: 1em;
   margin: 10px;
-  background: url("../assets/projects-favicons/fav-bite.png");
+  background: url("../assets/projects-favicons/fav-worms.png");
   background-size: cover;
 }
 
@@ -1034,3 +1037,4 @@ header .nav .close {
     visibility: visible;
   }
 }
+/*# sourceMappingURL=styles.css.map */

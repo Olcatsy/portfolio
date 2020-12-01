@@ -8,6 +8,7 @@
 
   &-inner {
     display: grid;
+    align-items: center;
     grid-gap: $spacing-m;
     grid-template-columns: 1fr;
     padding: $spacing-l 20px;
@@ -65,8 +66,8 @@
   @include project(#74388E, "../assets/projects-favicons/fav-analog.png");
 }
 
-.bite-sized {
-  @include project(#7B3890, "../assets/projects-favicons/fav-bite.png");
+.worms {
+  @include project(#7B3890, "../assets/projects-favicons/fav-worms.png");
 }
 // End of PROJECTS
 
