@@ -9,6 +9,7 @@
   &-inner {
     display: grid;
     align-items: center;
+    justify-items: center;
     grid-gap: $spacing-m;
     grid-template-columns: 1fr;
     padding: $spacing-l 20px;
@@ -50,24 +51,24 @@
 }
 
 // bg colors are a gradient from darker purple with blue undertone to lighter purple with red undertone
-.sophie {
-  @include project(#5E3789, "../assets/projects-favicons/fav-sophie.png");
+.worms {
+  @include project(#5E3789, "../assets/projects-favicons/fav-worms.png");
 }
 
-.flashback {
-  @include project(#65378B, "../assets/projects-favicons/fav-flashback.png");
+.analog {
+  @include project(#65378B, "../assets/projects-favicons/fav-analog.png");
 }
 
 .color-grid {
   @include project(#6C388D, "../assets/projects-favicons/fav-cgg.png");
 }
 
-.analog {
-  @include project(#74388E, "../assets/projects-favicons/fav-analog.png");
+.flashback {
+  @include project(#74388E, "../assets/projects-favicons/fav-flashback.png");
 }
 
-.worms {
-  @include project(#7B3890, "../assets/projects-favicons/fav-worms.png");
+.sophie {
+  @include project(#7B3890, "../assets/projects-favicons/fav-sophie.png");
 }
 // End of PROJECTS
 
@@ -82,6 +83,7 @@
 
     &-inner {
       grid-template-columns: repeat(2, 1fr);
+      padding: 0;
     }
 
     &-img {

@@ -693,6 +693,7 @@ header .nav .close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
   grid-gap: 30px;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -780,31 +781,31 @@ header .nav .close {
   margin-right: 30px;
 }
 
-.sophie {
+.worms {
   background: #5E3789;
 }
 
-.sophie .project-title:before {
+.worms .project-title:before {
   display: block;
   content: "";
   height: 1em;
   width: 1em;
   margin: 10px;
-  background: url("../assets/projects-favicons/fav-sophie.png");
+  background: url("../assets/projects-favicons/fav-worms.png");
   background-size: cover;
 }
 
-.flashback {
+.analog {
   background: #65378B;
 }
 
-.flashback .project-title:before {
+.analog .project-title:before {
   display: block;
   content: "";
   height: 1em;
   width: 1em;
   margin: 10px;
-  background: url("../assets/projects-favicons/fav-flashback.png");
+  background: url("../assets/projects-favicons/fav-analog.png");
   background-size: cover;
 }
 
@@ -822,31 +823,31 @@ header .nav .close {
   background-size: cover;
 }
 
-.analog {
+.flashback {
   background: #74388E;
 }
 
-.analog .project-title:before {
+.flashback .project-title:before {
   display: block;
   content: "";
   height: 1em;
   width: 1em;
   margin: 10px;
-  background: url("../assets/projects-favicons/fav-analog.png");
+  background: url("../assets/projects-favicons/fav-flashback.png");
   background-size: cover;
 }
 
-.worms {
+.sophie {
   background: #7B3890;
 }
 
-.worms .project-title:before {
+.sophie .project-title:before {
   display: block;
   content: "";
   height: 1em;
   width: 1em;
   margin: 10px;
-  background: url("../assets/projects-favicons/fav-worms.png");
+  background: url("../assets/projects-favicons/fav-sophie.png");
   background-size: cover;
 }
 
@@ -857,6 +858,7 @@ header .nav .close {
   .project-inner {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
   .project-img {
     -ms-grid-column: 1;
