@@ -59,7 +59,7 @@
       <div class="wrapper flex-parent">
 
         <div class="about-copy">
-          <h2 class="section-title">Who is Olga?</h2>
+          <h2 class="section-title">Who am I?</h2>
           <p class="copy">I’m a front-end web developer from Toronto, ON. I channel my interests in visual communication and computer technology
           to find creative solutions and bring my ideas to life on the web.</p>  
           <p class="copy middle-p"> Coming from a science background I have strong
@@ -394,7 +394,11 @@
   <footer class="footer">
 
     <a href="#top" class="scroll-to-top"><i class="fas fa-chevron-up" aria-hidden></i>Scroll to top</a>
-    <p>Copyright © 2020<span> Olga Filiushkina</span></p>
+    <p>Copyright ©
+      <span id="year">
+          <script>document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      <span> Olga Filiushkina</span></p>
     <p>Assets from <a href="https://www.freevector.com/">FreeVector.com</a></p>
   </footer>
   <!-- END OF FOOTER -->
