@@ -45,10 +45,6 @@
   &-button {
     @include button($accent2, $accent1);
   }
-
-  // &-button:nth-child(1) {
-  //   margin-right: $spacing-m;
-  // }
 }
 
 // bg colors are a gradient from darker purple with blue undertone to lighter purple with red undertone
