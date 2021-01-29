@@ -753,6 +753,7 @@ header .nav .close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 30px;
 }
 
 .project-button {
@@ -775,10 +776,6 @@ header .nav .close {
 
 .project-button:hover, .project-button:focus {
   background-position: 100%;
-}
-
-.project-button:nth-child(1) {
-  margin-right: 30px;
 }
 
 .worms {

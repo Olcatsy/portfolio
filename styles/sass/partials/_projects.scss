@@ -39,15 +39,16 @@
 
   &-buttons {
     @include flex(default, center, center);
+    gap: $spacing-m;
   }
 
   &-button {
     @include button($accent2, $accent1);
   }
 
-  &-button:nth-child(1) {
-    margin-right: $spacing-m;
-  }
+  // &-button:nth-child(1) {
+  //   margin-right: $spacing-m;
+  // }
 }
 
 // bg colors are a gradient from darker purple with blue undertone to lighter purple with red undertone
